@@ -5,12 +5,15 @@ from django.shortcuts import render
 
 
 def home(request):
-    return render(request, 'home.html')
+    return render(request, 'recipes/home.html', context={
+        'name': 'Nayra',
+        'age': 30,
+    })
+
+
+def contato(request):
+    return render(request, 'temp/temp.html')
 
 
 def sobre(request):
     return HttpResponse('Sobre')
-
-
-def contato(request):
-    return HttpResponse('Contato')
