@@ -1,7 +1,8 @@
 <div class="search-container">
     <div class="container">
         <form class="search-form">
-            <input type="text" class="search-input" name="search" placeholder="Search for recipes...">
+            <label for="search-input" class="sr-only"></label>
+            <input id="search-input" type="search" class="search-input" name="search" title="Search" placeholder="Search recipes" aria-label="Search">
             <button type="submit" class="search-button" title="Search" aria-label="Search">
                 <i class="fas fa-search" aria-hidden="true"></i>
                 <span class="sr-only">Search</span>
