@@ -4,7 +4,7 @@ from django.shortcuts import render
 
 
 def home(request):
-    return render(request, 'recipes/pages/home.html', {
+    return render(request, 'recipes/pages/home.html', context={
         'name': 'Nayra',
         'age': 30,
         'profission': 'Desenvolvedora',
@@ -12,5 +12,5 @@ def home(request):
 
 
 def recipe(request, id):
-    return render(request, 'recipes/pages/recipe-view.html', {
+    return render(request, 'recipes/pages/recipe-view.html', context={
     })
